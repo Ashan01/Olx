@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css" />
+
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+
+      <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+      <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+      <script>
+         var firebaseConfig = {
+            apiKey: "AIzaSyCS0SZhdcTHJiw5U06Of8iW_Ihc-ynNcEc",
+            authDomain: "olx-1-65e99.firebaseapp.com",
+            projectId: "olx-1-65e99",
+            storageBucket: "olx-1-65e99.appspot.com",
+            messagingSenderId: "402301354350",
+            appId: "1:402301354350:web:0d694fcd011bc0c964c17f",
+            measurementId: "G-6MJ185PDFK",
+         };
+         firebase.initializeApp(firebaseConfig);
+      </script>
+
+      <title>Document</title>
+   </head>
+   <body>
+      <div id="sell_div">
+         <div id="sell_nav">
+            <a href="/index.html"><img src="/img/arrow-left-solid.svg" width="50px" height="50px" alt="" /></a>
+            <img src="/img/olx.png" width="48px" height="48px" alt="" />
+         </div>
+         <span>POST YOUR AD</span>
+         <form class="container mb-4" id="sell_form">
+            <h3 class="mt-5">Include Some Details</h3>
+            <div class="mb-3">
+               <label for="exampleFormControlTextarea1" class="form-label mt-2">Ad title *</label>
+               <textarea class="form-control col-8 mb-3" rows="1"></textarea>
+
+               <label for="exampleFormControlTextarea1" class="form-label mb-3">Description *</label>
+               <textarea class="form-control col-8 mb-3" rows="4" id="inpDesc"></textarea>
+
+               <label for="exampleFormControlTextarea1" class="form-label">Set Prices *</label>
+               <textarea class="form-control col-8" rows="1" id="inpPrice"></textarea>
+
+               <h3>Upload Image</h3>
+               <div class="container">
+                  <div class="row">
+                     <!-- <label id="upProgress"></label>  -->
+                     <div class="my_img" onclick="myImg()">
+                        <img class="image_Icons col" id="myImg" />
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <!-- <label id="upProgress"></label>  -->
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                     <div class="my_img">
+                        <div class="image_Icons col" id=""></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button type="button" id="postNow" class="m-3" onclick="Submit()">Post Now</button>
+         </form>
+
+         <footer id="sell_footer">
+            <div id="sub_Sell_footer" class="pt-3 pl-5">
+               <span>Free Classifieds in Pakistan . © 2006-2020 OLX</span>
+            </div>
+         </footer>
+      </div>
+
+      <!-- <h1>Sell Their Product Easily</h1>
+
+      <h3>Price</h3>
+      <input type="text" id="inpPrice" placeholder="Product Price" required />
+
+      <h3>Description</h3>
+      <input type="text" id="inpDesc" placeholder="Description" required />
+
+      <h3>City</h3>
+      <input type="text" id="inpCity" placeholder="Product Name" required />
+
+      <h3>Upload Image</h3>
+      <img id="myImg" width="100px" height="70px" /> <label id="upProgress"></label> <br /><br />
+
+      <button type="button" id="select" onclick="select()">Select Image</button>
+      <button type="button" id="upload" onclick="upload()">Upload Image</button>
+
+      <button type="button" onclick="Submit()">Submit</button>
+      <button type="button">
+         <a href="./index.html">Cancel</a>
+      </button>
+
+      <button onclick="data()">Database</button> -->
+
+      <script src="js/app.js"></script>
+   </body>
+</html>
