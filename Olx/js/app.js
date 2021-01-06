@@ -18,6 +18,7 @@ async function myImg() {
       reader.onload = function () {
          document.getElementById("myImg").src = reader.result;
       };
+
       reader.readAsDataURL(files[0]);
    };
    input.click();
@@ -25,14 +26,14 @@ async function myImg() {
    uploadTask = firebase
       .storage()
       .ref()
-      .child("images/" + "imageName" + ".png")
+      .child("images/" + "imageName" + ".jpeg")
       .put(files[0]);
 
-   uploadTask.snapshot.ref.getDownloadURL().then(function (downlaodURL) {
-      database.child(key).set({
-         ImageUrl_1: downlaodURL,
-      });
-   });
+   // uploadTask.snapshot.ref.getDownloadURL().then(function (downlaodURL) {
+   //    database.child(key).set({
+   //       ImageUrl_1: downlaodURL,
+   //    });
+   // });
 }
 
 // function Submit() {
