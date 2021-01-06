@@ -3,9 +3,10 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="stylesheet" href="./css/style.css" />
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 
-      <link rel="stylesheet" href="/css/style.css" />
       <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css" />
 
       <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
@@ -30,20 +31,20 @@
    <body>
       <div id="sell_div">
          <div id="sell_nav">
-            <a href="/index.html"><img src="/img/arrow-left-solid.svg" width="50px" height="50px" alt="" /></a>
-            <img src="/img/olx.png" width="48px" height="48px" alt="" />
+            <a href="./index.html"><img src="./img/arrow-left-solid.svg" width="50px" height="50px" alt="" /></a>
+            <img src="./img/olx.png" width="48px" height="48px" alt="" />
          </div>
          <span>POST YOUR AD</span>
          <form class="container mb-4" id="sell_form">
             <h3 class="mt-5">Include Some Details</h3>
             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label mt-2">Ad title *</label>
+               <label for="exampleFormControlTextarea1" class="mt-2">Ad title *</label>
                <textarea class="form-control col-8 mb-3" rows="1"></textarea>
 
-               <label for="exampleFormControlTextarea1" class="form-label mb-3">Description *</label>
+               <label for="exampleFormControlTextarea1" class="mb-3">Description *</label>
                <textarea class="form-control col-8 mb-3" rows="4" id="inpDesc"></textarea>
 
-               <label for="exampleFormControlTextarea1" class="form-label">Set Prices *</label>
+               <label for="exampleFormControlTextarea1" class="">Set Prices *</label>
                <textarea class="form-control col-8" rows="1" id="inpPrice"></textarea>
 
                <h3>Upload Image</h3>
