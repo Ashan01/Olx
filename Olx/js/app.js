@@ -3,46 +3,6 @@ let key;
 var container_1 = document.getElementById("container_1");
 var uploadTask;
 
-// //IMAGE FUNCTION
-
-// var imageName, ImageUrl;
-// var files = [];
-// var reader;
-// var uploadTask;
-
-// let select = (e) => {
-//    var input = document.createElement("input");
-//    input.type = "file";
-
-//    input.onchange = (e) => {
-//       files = e.target.files;
-//       reader = new FileReader();
-//       reader.onload = function () {
-//          document.getElementById("myImg").src = reader.result;
-//       };
-//       reader.readAsDataURL(files[0]);
-//    };
-//    input.click();
-// };
-// function upload() {
-//    uploadTask = firebase
-//       .storage()
-//       .ref("Images/" + "Image" + Math.random() + ".png")
-//       .put(files[0]);
-
-//    uploadTask.on(
-//       "state_changed",
-//       function (snapshot) {
-//          var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-//          document.getElementById("upProgress").innerHTML = "upload" + progress + "%";
-//       },
-//       function (error) {
-//          //handle error here
-//          console.log(error.message);
-//       }
-//    );
-// }
-
 function myImg() {
    var files = [];
    var reader;
@@ -72,17 +32,6 @@ function myImg() {
          ImageUrl_1: downlaodURL,
       });
    });
-   // uploadTask.on(
-   //    "state_changed",
-   //    function (snapshot) {
-   //       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-   //       document.getElementById("upProgress").innerHTML = "upload" + progress + "%";
-   //    },
-   //    function (error) {
-   //       //handle error here
-   //       console.log(error.message);
-   //    }
-   // );
 }
 
 function Submit() {
@@ -90,7 +39,7 @@ function Submit() {
    let inpDesc = document.getElementById("inpDesc").value;
    // let inpCity = document.getElementById("inpCity").value;
 
-   database.child(key).set({
+   database.child(key).update({
       inpPrice_1: inpPrice,
       inpDesc_1: inpDesc,
       // inpCity_1: inpCity,

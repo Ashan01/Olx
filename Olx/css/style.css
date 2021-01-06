@@ -42,7 +42,7 @@
 /********************Category Sec End*********************/
 /******************** main Banner Start*********************/
 #banner {
-   background-image: url(/img/banner.jpg);
+   background-image: url("../img/banner.jpg");
    background-repeat: no-repeat;
    background-position: center;
    width: 100%;
