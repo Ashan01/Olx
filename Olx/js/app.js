@@ -127,11 +127,11 @@ database.on("child_added", function (data) {
    let div_2 = document.createElement("div");
    div_2.setAttribute("class", "card-footer");
 
-   let city = document.createElement("small");
-   let inpCity = document.createTextNode(data.val().inpCity_1);
-   city.appendChild(inpCity);
+   // let city = document.createElement("small");
+   // let inpCity = document.createTextNode(data.val().inpCity_1);
+   // city.appendChild(inpCity);
 
-   div_2.appendChild(city);
+   // div_2.appendChild(city);
 
    box.appendChild(img);
    box.appendChild(div_1);
