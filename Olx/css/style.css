@@ -208,6 +208,10 @@
    height: 50px;
    margin: 22% 0;
 }
+.box-img {
+   width: 100px;
+   height: 100px;
+}
 
 #postNow {
    width: 90px;

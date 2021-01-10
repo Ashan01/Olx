@@ -51,7 +51,7 @@ database.on("child_added", function (data) {
 
    let img = document.createElement("img");
    img.setAttribute("src", data.val().ImageUrl_1);
-   img.setAttribute("class", "card-img-top");
+   img.setAttribute("class", "card-img-top box-img");
 
    let div_1 = document.createElement("div");
    div_1.setAttribute("class", "card-body");
