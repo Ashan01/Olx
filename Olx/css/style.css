@@ -5,33 +5,12 @@
 }
 /*********************  Header Sec Start *********************/
 #header {
-   background-color: rgb(rgb(255, 255, 255));
-   height: 68px;
+   background-color: rgb(rgb(179, 147, 147));
+   overflow: hidden;
+   height: 100px;
+   padding: 10px 10px;
 }
 
-.input-group {
-   width: 20% !important;
-   padding-left: 20px;
-}
-#form_1 {
-   width: 57% !important;
-   margin-left: 20px;
-}
-.form-control {
-   width: 85% !important;
-}
-#sell_btn {
-   border: 1px solid black;
-   margin-left: 15px;
-}
-
-#profile_dropdown {
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   border: 1px solid;
-   background-color: #333333;
-}
 /******************** Header Sec End *********************/
 
 /******************** Category Sec Start*************/

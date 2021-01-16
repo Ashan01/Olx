@@ -38,10 +38,16 @@
          <!-- Header Sec Start -->
 
          <div id="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <img src="./img/olx.png" class="py-2" width="48px" height="48px" alt="" />
+            <nav class="navbar navbar-expand-lg navbar-light bg-light row container-fluid">
+               <img
+                  src="./img/olx.png"
+                  class="col-1 col-xl-1 col-md-1 col-lg-1 col-sm-1"
+                  width="48px"
+                  height="48px"
+                  alt=""
+               />
 
-               <div class="input-group">
+               <div class="input-group col-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
                   <input
                      type="text"
                      class="form-control"
@@ -66,29 +72,28 @@
                   </div>
                </div>
 
-               <div id="form_1">
-                  <form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+               <div id="form_1" class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <form class="form-inline my-lg-0">
+                     <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search" />
+                     <button class="btn btn-outline-dark my-sm-0" type="submit">Search</button>
                   </form>
                </div>
 
-               <div id="icon">
-                  <img src="./img/comment.svg" class="mx-2" width="24px" height="24px" alt="" />
-                  <img src="./img/bell-regular.svg" class="mr-3" width="24px" height="24px" alt="" />
-               </div>
-               <ul class="nav nav-tabs">
-                  <li class="nav-item dropdown">
-                     <div id="profile_dropdown"></div>
-                  </li>
-               </ul>
-               <div id="sell_btn_div">
-                  <a href="./sellIteam.html">
-                     <button type="button" id="sell_btn" class="btn btn-light">+ Sell</button>
-                  </a>
+               <div class="col-2 d-flex col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                  <div class="px-2 py-1">
+                     <img src="./img/comment.svg" class="mx-1" width="24px" height="24px" alt="" />
+                     <img src="./img/bell-regular.svg" class="" width="24px" height="24px" alt="" />
+                  </div>
+
+                  <div class="px-2">
+                     <a href="./sellIteam.html">
+                        <button type="button" id="sell_btn" class="btn btn-light border border-dark">+ Sell</button>
+                     </a>
+                  </div>
                </div>
             </nav>
          </div>
+
          <!-- Header Sec End -->
 
          <!-- Sub Header Start -->
@@ -121,6 +126,7 @@
          <!-- Sub Header End -->
 
          <!-- Banner Sec Start -->
+
          <div id="banner"></div>
 
          <!--Banner Sec End  -->
