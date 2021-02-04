@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js"></script>
+
+      <script>
+         var firebaseConfig = {
+            apiKey: "AIzaSyBiNkby6jAUKE52SzuUzosqpjZwpXOcMCw",
+            authDomain: "olx-d2087.firebaseapp.com",
+            projectId: "olx-d2087",
+            storageBucket: "olx-d2087.appspot.com",
+            messagingSenderId: "954353708909",
+            appId: "1:954353708909:web:37fbfaa0ea86778e2bb464",
+            measurementId: "G-37B7RMN2C9",
+         };
+         firebase.initializeApp(firebaseConfig);
+      </script>
+
+      <title>Olx</title>
+   </head>
+   <body>
+      <div id="overview ">
+         <!-- Header Sec Start -->
+         <div id="header" class="bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light row w-100">
+               <img
+                  src="./img/olx.png"
+                  class="col-2 col-xl-1 col-md-1 col-lg-1 col-sm-2"
+                  width="48px"
+                  height="48px"
+                  alt=""
+               />
+
+               <div class="input-group col-xl-3 col-lg-3 col-md-3 col-sm-3" id="CountrySerch">
+                  <input
+                     type="text"
+                     class="form-control"
+                     placeholder="Pakistan"
+                     aria-label="Text input with dropdown button"
+                  />
+                  <div class="input-group-append">
+                     <button
+                        class="btn btn-outline-secondary dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                     ></button>
+                  </div>
+               </div>
+
+               <div id="form_1" class="col-8 col-xl-6 col-lg-5 col-md-5 col-sm-5">
+                  <form class="form-inline">
+                     <input
+                        class="form-control w-75 w-col-sm-50"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                     />
+                     <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+               </div>
+
+               <div id="form_2" class="col-2 d-flex col-xl-2 col-lg-3 col-md-3 col-sm-2 d-flex">
+                  <div class="px-2 py-1" id="icons">
+                     <img src="./img/comment.svg" class="" width="24px" height="24px" alt="" />
+                     <img src="./img/bell-regular.svg" class="" width="24px" height="24px" alt="" />
+                  </div>
+
+                  <div class="px-2">
+                     <a href="./Sell_Components/sell.html">
+                        <button type="button" id="sell_btn" class="btn btn-light border border-dark">+ Sell</button>
+                     </a>
+                  </div>
+               </div>
+            </nav>
+         </div>
+
+         <!-- Header Sec End -->
+
+         <!-- Sub Header Start -->
+
+         <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#" id="all_Category">All Category</a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-toggle="collapse"
+               data-target="#navbarNavAltMarkup"
+               aria-controls="navbarNavAltMarkup"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="#">Mobile Phones </a>
+                  <a class="nav-item nav-link active" href="#">Car </a>
+                  <a class="nav-item nav-link active" href="#">Motorcycle </a>
+                  <a class="nav-item nav-link active" href="#">House </a>
+                  <a class="nav-item nav-link active" href="#">TV-Video-Audio </a>
+                  <a class="nav-item nav-link active" href="#">Land-Plot </a>
+                  <a class="nav-item nav-link active" href="#">Tablet </a>
+               </div>
+            </div>
+         </nav>
+
+         <!-- Sub Header End -->
+
+         <!-- Banner Sec Strat -->
+
+         <div id="banner"></div>
+         <!-- Banner Sec End -->
+
+         <!-- Product Sec Start-->
+
+         <div id="Products" class="container my-3">
+            <h2>Fresh recommendation</h2>
+            <div id="container_1" class="row">
+               <!-- <div class="products_Iteams col-lg-3 col-md-5 col-sm-5 col-5 p-0 ">
+                  <div class="products_img">
+                     <img src="./img/wallet01.jpg" alt="" />
+                  </div>
+                  <div class="products_price pl-2">
+                     <h5>Rs: 20,000</h5>
+                  </div>
+                  <div class="products_desc pl-2">
+                     <p>Lorem, ipsum.lorme Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="products_city pt-3 pl-2">
+                     <p>Karachi</p>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+
+         <!-- Product Sec End -->
+
+         <!-- Footer Banner  -->
+         <div id="main_footer_banner">
+            <div id="footer_banner" class="container">
+               <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-7 col-sm-9" id="footer_bg_img"></div>
+                  <div class="col-xl-4 col-lg-4 d-sm-none d-lg-inline none_576" id="footer_banner_Text">
+                     <span>TRY THE OLX APP </span>
+                     <p>Buy, sell and find just about anything using the app on your mobile.</p>
+                     <div class="my-4" id="footer_banner_border"></div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 d-sm-none d-lg-inline none_576" id="footer_banner_link">
+                     <p>GET YOUR APP TODAY</p>
+
+                     <div class="d-lg-block d-xl-flex pl-3">
+                        <img src="./img/appstore_2x.png" alt="" />
+                        <img src="./img/playstore_2x.png" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer Banner End -->
+
+         <footer id="footer" class="row m-0">
+            <div class="d-flex col-lg-9 col-md-12 col-sm-12">
+               <div class="footer_li ml-sm-0 ml-lg-5 w-25">
+                  <span>Popular Category</span>
+                  <ul>
+                     <li><a href="#">Car</a></li>
+                     <li><a href="#">Flat for rent</a></li>
+                     <li><a href="#">Jobs</a></li>
+                     <li><a href="#">Mobile Phones</a></li>
+                  </ul>
+               </div>
+               <div class="footer_li w-25">
+                  <span>Trending Serches</span>
+                  <ul>
+                     <li><a href="#">Bike</a></li>
+                     <li><a href="#">Watches </a></li>
+                     <li><a href="#">Books</a></li>
+                     <li><a href="#">Cats</a></li>
+                  </ul>
+               </div>
+               <div class="footer_li w-25">
+                  <span>About Us</span>
+                  <ul>
+                     <li><a href="#">About Olx Group</a></li>
+                     <li><a href="#">Olx Blogs</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Olx Business</a></li>
+                  </ul>
+               </div>
+               <div class="footer_li w-auto">
+                  <span>Olx</span>
+                  <ul>
+                     <li><a href="#">Help</a></li>
+                     <li><a href="#">Site map</a></li>
+                     <li><a href="#">Cookies</a></li>
+                     <li><a href="#">legal & Privacy Information</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="footer_li col-3 d-sm-none d-lg-inline none_576" id="footer_li_2">
+               <span id="follow_us"> FOLLOW US </span>
+               <div id="footer_social_icons">
+                  <img src="./img/facebook-brands.svg" class="pr-2" width="30px" height="30px" alt="" />
+                  <img src="./img/whatsapp-brands.svg" class="pr-2" width="30px" height="30px" alt="" />
+                  <img src="./img/instagram-brands.svg" class="pr-2" width="30px" height="30px" alt="" />
+                  <img src="./img/twitter-brands.svg" class="pr-2" width="30px" height="30px" alt="" />
+               </div>
+
+               <div class="row_1 mt-5 d-flex none_576">
+                  <img src="./img/appstore.png" width="94" height="26" alt="" />
+
+                  <img src="./img/playstore.png" width="94" height="26" alt="" />
+               </div>
+            </div>
+         </footer>
+
+         <div id="footer_end" class="row d-flex m-0 pt-3">
+            <div class="col-lg-5 col-md-6 d-sm-none d-md-inline align-content-start none_576">
+               <span class="span_1">Other Countries</span>
+               <span class="span_2"> India - South Africa - Indonesia</span>
+            </div>
+
+            <div class="col-lg-4 col-md-1 col-sm-0"></div>
+            <div class="col-lg-3 col-md-5 col-sm-12 align-content-end">
+               <span class="span_1">Free Classifieds in Pakistan </span>
+               <span class="span_2">. © 2006-2020 OLX</span>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/app.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>
