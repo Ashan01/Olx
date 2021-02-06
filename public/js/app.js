@@ -66,7 +66,7 @@ database.on("child_added", function (data) {
 
    let descDiv = document.createElement("div");
    let descElement = document.createElement("p");
-   descElement.setAttribute("class", "products_desc pl-2");
+   descElement.setAttribute("class", "products_desc pl-2  ");
 
    let descTextNode = document.createTextNode(data.val().inpDesc_1);
    descElement.append(descTextNode);
