@@ -93,7 +93,7 @@
    list-style: none;
 }
 
-#footer_end {
+.footer_end {
    background-color: #002f34;
    width: 100%;
    height: 50px;
