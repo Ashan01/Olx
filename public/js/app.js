@@ -47,7 +47,10 @@ function Submit() {
 database.on("child_added", function (data) {
    console.log(data.val().inpCity_1);
    let box = document.createElement("div");
-   box.setAttribute("class", "products_Iteams col-lg-3 col-md-5 col-sm-5 col-5 p-0 m-3");
+   box.setAttribute(
+      "class",
+      "products_Iteams col-lg-3 col-md-5 col-sm-5 col-5 p-0 m-3"
+   );
    container_1.appendChild(box);
 
    let img_Div = document.createElement("div");
